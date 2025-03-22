@@ -1,0 +1,26 @@
+{
+  "name": "BioMetricApp",
+  "main": "app/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/biometrics": "^1.3.1",
+    "@nativescript/core": "~8.9.0",
+    "@nativescript/secure-storage": "^3.0.3",
+    "@nativescript/theme": "^3.1.0",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.9.1",
+    "@nativescript/ios": "8.9.2",
+    "@nativescript/types": "~8.9.0",
+    "@nativescript/webpack": "~5.0.0",
+    "typescript": "~5.4.0"
+  },
+  "nativescript": {
+    "id": "org.nativescript.BioMetricApp",
+    "ios": {
+      "minVersion": "12.0"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <StackLayout class="p-20">
+        <Label text="Welcome" class="h1 text-center"/>
+        
+        <TextField id="username" hint="Username" class="input"/>
+        <TextField id="password" hint="Password" secure="true" class="input"/>
+        
+        <Button text="Login" class="btn btn-primary" tap="onLoginTap"/>
+        <Button text="Create Account" class="btn btn-outline" tap="onCreateAccountTap"/>
+        
+        <Button id="biometricBtn" class="biometric-btn" tap="onBiometricTap">
+            <FormattedString>
+                <!-- Android Fingerprint Icon -->
+                <Span class="biometric-icon android" text="&#xe90d;"/>
+                <!-- iOS Face ID Icon -->
+                <Span class="biometric-icon ios" text="􀟛"/>
+                <Span text=" Continue with Biometrics" class="biometric-text"/>
+            </FormattedString>
+        </Button>
+
+    </StackLayout>
+</Page>

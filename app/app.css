@@ -1,0 +1,78 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+/* @import '~font-awesome/css/font-awesome.css'; */
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+@font-face {
+    font-family: 'MaterialIcons';
+    src: url('~/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('~/fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+.input {
+    font-size: 16;
+    padding: 8;
+    margin: 8 0;
+    border-bottom-width: 1;
+    border-bottom-color: #ccc;
+}
+
+.btn {
+    margin: 8 0;
+    padding: 12;
+    font-size: 16;
+    border-radius: 4;
+}
+
+.btn-primary {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-outline {
+    border-width: 1;
+    border-color: #2196F3;
+    color: #2196F3;
+}
+
+.switch {
+    margin: 8 0;
+}
+
+
+.biometric-btn {
+    margin: 20 0;
+    background-color: transparent;
+    border-width: 1;
+    border-color: #007AFF;
+    color: #007AFF;
+    text-align: center;
+    padding: 10;
+}
+
+/* Android Material Icons */
+.android .biometric-icon {
+    font-family: 'MaterialIcons';
+    font-size: 24;
+    color: #007AFF;
+    content: "\e90d";
+}
+
+/* iOS Font Awesome Fallback */
+.ios .biometric-icon {
+    font-family: '.AppleSystemUIFont';
+    font-weight: 400;
+    font-size: 24;
+    color: #007AFF;
+    content: "\f023";
+}
+
+/* Hide opposite platform's icon */
+.android .biometric-icon.ios { visibility: collapse; }
+.ios .biometric-icon.android { visibility: collapse; }

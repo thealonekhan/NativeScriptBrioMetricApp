@@ -1,0 +1,26 @@
+// You can add your native dependencies here
+dependencies {
+//  implementation 'androidx.multidex:multidex:2.0.1'
+}
+
+android {
+  namespace "org.nativescript.BioMetricApp"
+  compileSdkVersion 34
+  buildToolsVersion "34"
+  ndkVersion "29.0.13113456"
+
+  defaultConfig {
+    minSdkVersion 23
+    targetSdkVersion 34
+
+    // Version Information
+    versionCode 1
+    versionName "1.0.0"
+    
+    generatedDensities = []
+  }
+
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}

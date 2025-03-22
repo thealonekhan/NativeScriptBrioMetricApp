@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" unloaded="unloaded" actionBarHidden="true">
+    <StackLayout class="p-20">
+        <Label id="welcomeLabel" text="{{ welcomeMessage }}" class="h1 text-center"/>
+        
+            <StackLayout class="m-t-20" visibility="visible">
+                <Label text="Biometric Settings" class="h3"/>            
+
+                <Switch id="biometricToggle" checked="{{ biometricEnabled }}" 
+                    isEnabled="{{ biometricAvailable }}"
+                    checkedChange="onBiometricCheckedChange"
+                    class="switch"/>
+            </StackLayout>
+        
+        <Button text="Logout" class="btn btn-outline" tap="onLogoutTap"/>
+    </StackLayout>
+</Page>
