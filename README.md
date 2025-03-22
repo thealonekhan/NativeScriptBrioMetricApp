@@ -54,5 +54,10 @@ ns build android --release \
 4. Push to branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
+![Login Screen](screenshots/login.png)
+![Registration Screen](screenshots/register.png)
+![Biometric Setup](screenshots/biometric-settings.png)
+![Face ID Detection(IOS)](screenshots/faceid.png)
+
 ## License
 [MIT License](LICENSE)
